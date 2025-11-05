@@ -2,7 +2,7 @@ const redux = require('redux');
 const createStore = redux.createStore;
 const axios = require('axios');
 const applyMiddleware = redux.applyMiddleware;
-const thunkMiddleware = require('redux-thunk').default;
+const thunkMiddleware = require('redux-thunk').thunk;
 
 const FETCH_USERS_REQUESTED = 'FETCH_USERS_REQUESTED';
 const FETCH_USERS_SUCCEEDED = 'FETCH_USERS_SUCCEEDED';
