@@ -11,7 +11,7 @@ export const LoginView = () => {
     const [password, setPassword]=useState("")
     
     const dispatch=useAppDispatch() 
-    const {user, isAutehnticated, error, loading}=useAppSelector(state=>state.login)
+    const {user, isAuthenticated, error, loading}=useAppSelector(state=>state.login)
 
     const handleSubmit=(e:any)=>{
         e.preventDefault()
@@ -20,8 +20,8 @@ export const LoginView = () => {
   return (
     <div>
         <h2>LoginView</h2>
-        {error && <button onClick={dispatch(setError(null))}>clear error</button>}
-        {isAutehnticated && user &&
+        {error && <button onClick={()=>dispatch(setError(null))}>clear error</button>}
+        {isAuthenticated && user &&
             <div>
                 {user.name} ({user.role})
                 </div>

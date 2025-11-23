@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { useAppSelector, useAppDispatch } from '../../app/Hook';
 import type { PayloadAction } from '@reduxjs/toolkit';
 import axios from 'axios';
 
